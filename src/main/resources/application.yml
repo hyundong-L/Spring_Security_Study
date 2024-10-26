@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: Security_Study
+
+  profiles:
+    active: prod
+
+  datasource:
+    url: jdbc:h2:mem:testdb
+
+  h2:
+    console:
+      enabled: true
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+
+jwt:
+  expiration:
+    access: ${jwt.expiration.access}  # 1000 * 60 * 120 = 2 hour
+    refresh: ${jwt.expiration.refresh} # 1000 * 60 * 120 = 2 weeks
+
+  secret: ${jwt.secret}
