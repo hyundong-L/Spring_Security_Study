@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OAuth2 Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-container {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .login-container h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .login-container a {
+            display: block;
+            margin: 10px 0;
+            font-size: 18px;
+            color: #007bff;
+            text-decoration: none;
+        }
+        .login-container a:hover {
+            text-decoration: underline;
+        }
+        .divider {
+            background-color: #e0e0e0;
+            height: 50px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+<div class="login-container">
+    <h1>Login with OAuth 2.0</h1>
+    <a href="/oauth2/authorization/naver">Naver</a>
+    <a href="/oauth2/authorization/google">Google</a>
+    <a href="/oauth2/authorization/kakao">Kakao</a>
+</div>
+</body>
+</html>
