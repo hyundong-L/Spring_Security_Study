@@ -1,1 +1,24 @@
-spring.application.name=Security_Study
+spring:
+  application:
+    name: Security_Study
+
+  profiles:
+    include: auth
+
+  datasource:
+    url: jdbc:h2:mem:testdb
+
+  h2:
+    console:
+      enabled: true
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+
+jwt:
+  expiration:
+    access: ${jwt.expiration.access}
+    refresh: ${jwt.expiration.refresh}
+
+  secret: ${jwt.secret}
